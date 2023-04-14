@@ -3,7 +3,6 @@ package com.health.DocMate.controllers;
 import com.health.DocMate.interfaces.UserRepository;
 import com.health.DocMate.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,4 +24,10 @@ public class example {
         user.setId(user.getUsername().concat(user.getPassword()));
         userRepository.save(user);
     }
+
+//    @PostMapping("/ourolimoksi")
+//    public void test(@RequestBody Infection infection) {
+//        user.setId(user.getUsername().concat(user.getPassword()));
+//        userRepository.save(user);
+//    }
 }

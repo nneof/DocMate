@@ -1,0 +1,82 @@
+.searchForm {
+    border: 2px solid #4b84e0;
+    border-radius: 4px;
+    width: 50%;
+    min-height: 10vw;
+    min-width: 300px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
+@media screen and (max-width: 540px) {
+    .searchInput {
+        padding-left: 2vw;
+        width: 20vh;
+        height: 5vw;
+        border-radius: 4px;
+    }
+
+    .searchButton {
+        font-size: 10px;
+        margin-left: 2px;
+    }
+
+    .search {
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        border-radius: 4px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .searchInput {
+        padding-left: 2vw;
+        width: 20vh;
+        height: 5vw;
+        border-radius: 4px;
+    }
+
+    .searchButton {
+        height: max-content;
+        border-radius: 4px;
+    }
+
+    .search {
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        padding-left: 2vw;
+        border-radius: 4px;
+    }
+}
+
+/* For Computers */
+@media screen and (min-width: 780px) {
+    .searchInput {
+        padding-left: 2vw;
+        width: 20vh;
+        height: 2vw;
+        border-radius: 4px;
+    }
+
+    .searchButton {
+        margin-left: 2px;
+        padding-right: 8px;
+        padding-left: 8px;
+        height: 2vw;
+    }
+
+    .search {
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        padding-left: 2vw;
+        border-radius: 4px;
+    }
+}
+
+
+
