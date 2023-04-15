@@ -22,7 +22,6 @@ function Home() {
                            onChange={queryChangeHandler} value={query}/>
                     <input className={"searchButton"} type="submit" value="🔍" onClick={search} />
                 </div>
-
             </form>
         </div>
     )
