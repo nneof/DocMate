@@ -34,6 +34,10 @@ li {
     margin: 10px 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .closeMenu {
     color: red;
     position: absolute;
@@ -43,4 +47,12 @@ li {
 
 .menuItem {
     color: #1416d0;
+}
+
+.doctorCoat {
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    width: auto;
+    height: 10%;
 }

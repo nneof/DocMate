@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
+import doctorCoat from'../images/lab-coat.png';
 import "../styling/Menu.css";
 
 class Menu extends Component {
@@ -18,7 +19,7 @@ class Menu extends Component {
         return (
             <div id="flyoutMenu" className={visibility}>
                 <div className={"closeMenu"} onClick={this.props.handleMouseDown} style={{"cursor": "pointer"}}>✖</div>
-                <ul style={{"list-style-type": "none"}}>
+                <ul>
                     <li>
                         <NavLink to='/doc/mate/home' onClick={changeRoute} className={"menuItem"}>Home</NavLink>
                     </li>
@@ -29,6 +30,7 @@ class Menu extends Component {
                         <NavLink to='/doc/mate/about' onClick={changeRoute} className={"menuItem"}>About</NavLink>
                     </li>
                 </ul>
+                <img  src={doctorCoat} className={"doctorCoat"} alt="fireSpot"/>
             </div>
         );
     }
