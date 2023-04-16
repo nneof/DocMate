@@ -20,7 +20,9 @@ function Home() {
                 <div className={"search"}>
                     <input className={"searchInput"} type="text" name="query" id="query" placeholder="Search here"
                            onChange={queryChangeHandler} value={query}/>
-                    <input className={"searchButton"} type="submit" value="🔍" onClick={search} />
+                    <button className={"searchButton"} type="submit" onClick={search} >
+                        🔍
+                    </button>
                 </div>
             </form>
         </div>
