@@ -1,4 +1,4 @@
-package com.health.DocMate.models;
+package com.health.DocMate.models.DB;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

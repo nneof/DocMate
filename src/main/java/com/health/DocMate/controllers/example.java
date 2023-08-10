@@ -1,12 +1,13 @@
 package com.health.DocMate.controllers;
 
-import com.health.DocMate.interfaces.UserRepository;
-import com.health.DocMate.models.User;
+import com.health.DocMate.Repositories.InfectionRepository;
+import com.health.DocMate.Repositories.UserRepository;
+import com.health.DocMate.models.DB.MongoDBInfection;
+import com.health.DocMate.models.DB.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 public class example {
@@ -14,20 +15,17 @@ public class example {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/api/dadjokes")
-    public String dadJokes() {
-        return "Justice is a dish best served cold, if it were served warm it would be just water.";
-    }
+    @Autowired
+    private InfectionRepository infectionRepository;
 
-    @PostMapping("/add")
-    public void testDb(@RequestBody User user) {
+    @PostMapping("/user/create")
+    public void createUser(@RequestBody User user) {
         user.setId(user.getUsername().concat(user.getPassword()));
         userRepository.save(user);
     }
 
-//    @PostMapping("/ourolimoksi")
-//    public void test(@RequestBody Infection infection) {
-//        user.setId(user.getUsername().concat(user.getPassword()));
-//        userRepository.save(user);
-//    }
+    @GetMapping("/infection")
+    public Optional<MongoDBInfection> getInfection(@RequestParam String id) {
+        return infectionRepository.findById(id);
+    }
 }
