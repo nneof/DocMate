@@ -4,24 +4,6 @@
     align-items: center;
 }
 
-.content {
-    padding: 10px;
-}
-
-.circle {
-    background: none repeat scroll 0 0 #293a42;
-    border-radius: 50px;
-    border: 1px solid #04afff;
-    color: #ffffff;
-    font-size: 14px;
-    margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
-    max-width: 300px;
-    max-height: 300px;
-    padding: 10px;
-}
-
 .tree ul {
     padding: 0 15px 0 15px;
     position: relative;

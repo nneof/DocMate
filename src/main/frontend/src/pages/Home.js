@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import '../styling/Home.css'
 import Tree from '../components/Tree';
 import axios from 'axios';
-import exampleJson from '../example.json';
 
 function Home() {
 
@@ -39,7 +38,7 @@ function Home() {
                 </div>
             </form>
             <div>
-                {response != null && <Tree treeData={exampleJson}/>}
+                {response != null && <Tree treeData={response}/>}
             </div>
         </div>
     )

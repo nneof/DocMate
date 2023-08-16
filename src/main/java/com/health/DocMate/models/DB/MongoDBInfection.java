@@ -1,11 +1,8 @@
 package com.health.DocMate.models.DB;
 
-import com.health.DocMate.models.models.Node;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.ArrayList;
 
 @Data
 @NoArgsConstructor
@@ -16,5 +13,6 @@ import java.util.ArrayList;
 public class MongoDBInfection {
     @Id
     private String id;
-    private ArrayList<Node> nodes;
+    private String description;
+    private Children[] children;
 }
