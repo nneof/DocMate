@@ -39,7 +39,7 @@ function Home() {
                 </div>
             </form>
             <div>
-                {response != null && <Tree tree={exampleJson}/>}
+                {response != null && <Tree treeData={exampleJson}/>}
             </div>
         </div>
     )
